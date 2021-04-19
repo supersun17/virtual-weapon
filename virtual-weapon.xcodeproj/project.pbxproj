@@ -20,6 +20,8 @@
 		82616FC226202E5D00C6A3F6 /* LimitedLengthQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82616FC126202E5D00C6A3F6 /* LimitedLengthQueue.swift */; };
 		82616FC6262033F300C6A3F6 /* LimitedLengthQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82616FC126202E5D00C6A3F6 /* LimitedLengthQueue.swift */; };
 		826170DC262D65DB00C6A3F6 /* DataFarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826170DB262D65DB00C6A3F6 /* DataFarm.swift */; };
+		826170E6262D671700C6A3F6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 826170E4262D671700C6A3F6 /* LICENSE */; };
+		826170E7262D671700C6A3F6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 826170E5262D671700C6A3F6 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		82616F4A261F009800C6A3F6 /* Weapons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weapons.swift; sourceTree = "<group>"; };
 		82616FC126202E5D00C6A3F6 /* LimitedLengthQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedLengthQueue.swift; sourceTree = "<group>"; };
 		826170DB262D65DB00C6A3F6 /* DataFarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFarm.swift; sourceTree = "<group>"; };
+		826170E4262D671700C6A3F6 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		826170E5262D671700C6A3F6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,8 @@
 		82616EFA261EE94400C6A3F6 = {
 			isa = PBXGroup;
 			children = (
+				826170E4262D671700C6A3F6 /* LICENSE */,
+				826170E5262D671700C6A3F6 /* README.md */,
 				82616F05261EE94400C6A3F6 /* virtual-weapon */,
 				82616F1C261EE94600C6A3F6 /* virtual-weaponTests */,
 				82616F27261EE94600C6A3F6 /* virtual-weaponUITests */,
@@ -270,6 +276,8 @@
 			files = (
 				82616F13261EE94500C6A3F6 /* LaunchScreen.storyboard in Resources */,
 				82616F10261EE94500C6A3F6 /* Assets.xcassets in Resources */,
+				826170E7262D671700C6A3F6 /* README.md in Resources */,
+				826170E6262D671700C6A3F6 /* LICENSE in Resources */,
 				82616F0E261EE94400C6A3F6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
