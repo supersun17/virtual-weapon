@@ -8,12 +8,18 @@
 import UIKit
 
 class HomeVC: UIViewController {
-    private(set) lazy var gripButton: UIButton = {
-        let btn = UIButton()
-        btn.setTitle("Grip", for: .normal)
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        return btn
+    private(set) lazy var gripArea: UILabel = {
+        let lbl = UILabel()
+        lbl.backgroundColor = .gray
+        lbl.textAlignment = .center
+        lbl.text = "GRIP"
+        lbl.layer.cornerRadius = gripAreaCornerRadius
+        lbl.clipsToBounds = true
+        lbl.isUserInteractionEnabled = true
+        lbl.translatesAutoresizingMaskIntoConstraints = false
+        return lbl
     }()
+    private let gripAreaCornerRadius: CGFloat = 60.0
 
     let motion = Motion()
     lazy var greatSword = GreatSword(with: motion)
@@ -27,29 +33,36 @@ class HomeVC: UIViewController {
         // Do any additional setup after loading the view.
         setUpUI()
         setUpActions()
-
-        greatSword.delegate = self
-        greatSword.startSimulate()
     }
 
     private func setUpUI() {
-        view.addSubview(gripButton)
+        view.backgroundColor = .white
+        view.addSubview(gripArea)
         var constraints = [NSLayoutConstraint]()
         constraints += [
-            gripButton.heightAnchor.constraint(equalToConstant: 60.0),
-            gripButton.widthAnchor.constraint(equalTo: gripButton.heightAnchor),
-            gripButton.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            gripButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            gripArea.heightAnchor.constraint(equalToConstant: gripAreaCornerRadius * 2.0),
+            gripArea.widthAnchor.constraint(equalTo: gripArea.heightAnchor),
+            gripArea.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            gripArea.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ]
         NSLayoutConstraint.activate(constraints)
     }
 
     private func setUpActions() {
-        gripButton.addTarget(self, action: #selector(handleGrip), for: .valueChanged)
+        greatSword.delegate = self
+        let holding = UILongPressGestureRecognizer(target: self, action: #selector(handleGrip))
+        gripArea.addGestureRecognizer(holding)
     }
     @objc
-    private func handleGrip(btn: UIButton) {
-        print("Pressing?")
+    private func handleGrip(recognizer: UIGestureRecognizer) {
+        switch recognizer.state {
+        case .began:
+            greatSword.startSimulate()
+        case .cancelled, .failed, .ended:
+            greatSword.stopSimulate()
+        default:
+            break
+        }
     }
 
 }

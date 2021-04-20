@@ -47,6 +47,10 @@ class GreatSword {
 
     func stopSimulate() {
         motion?.stopUpdate()
+        timer?.invalidate()
+        timer = nil
+        currentPhase = 0
+        delegate?.reset()
     }
 
     func checkMotion(_ timer: Timer) {
