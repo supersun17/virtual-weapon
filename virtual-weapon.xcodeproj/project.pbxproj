@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		822B68E0265215D100E2D07A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822B68DF265215D100E2D07A /* AppDelegate.swift */; };
+		822B68E2265215D100E2D07A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822B68E1265215D100E2D07A /* ViewController.swift */; };
+		822B68E4265215D200E2D07A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822B68E3265215D200E2D07A /* Assets.xcassets */; };
+		822B68E7265215D200E2D07A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822B68E5265215D200E2D07A /* Main.storyboard */; };
 		82616F07261EE94400C6A3F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82616F06261EE94400C6A3F6 /* AppDelegate.swift */; };
 		82616F09261EE94400C6A3F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82616F08261EE94400C6A3F6 /* SceneDelegate.swift */; };
 		82616F0B261EE94400C6A3F6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82616F0A261EE94400C6A3F6 /* HomeVC.swift */; };
@@ -41,6 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		822B68DD265215D100E2D07A /* virtual-weapon-monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "virtual-weapon-monitor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		822B68DF265215D100E2D07A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		822B68E1265215D100E2D07A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		822B68E3265215D200E2D07A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		822B68E6265215D200E2D07A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		822B68E8265215D200E2D07A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822B68E9265215D200E2D07A /* virtual_weapon_monitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = virtual_weapon_monitor.entitlements; sourceTree = "<group>"; };
 		82616F03261EE94400C6A3F6 /* virtual-weapon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "virtual-weapon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82616F06261EE94400C6A3F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82616F08261EE94400C6A3F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +74,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		822B68DA265215D100E2D07A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82616F00261EE94400C6A3F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,12 +105,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		822B68DE265215D100E2D07A /* virtual-weapon-monitor */ = {
+			isa = PBXGroup;
+			children = (
+				822B68DF265215D100E2D07A /* AppDelegate.swift */,
+				822B68E1265215D100E2D07A /* ViewController.swift */,
+				822B68E3265215D200E2D07A /* Assets.xcassets */,
+				822B68E5265215D200E2D07A /* Main.storyboard */,
+				822B68E8265215D200E2D07A /* Info.plist */,
+				822B68E9265215D200E2D07A /* virtual_weapon_monitor.entitlements */,
+			);
+			path = "virtual-weapon-monitor";
+			sourceTree = "<group>";
+		};
 		82616EFA261EE94400C6A3F6 = {
 			isa = PBXGroup;
 			children = (
 				826170E4262D671700C6A3F6 /* LICENSE */,
 				826170E5262D671700C6A3F6 /* README.md */,
 				82616F05261EE94400C6A3F6 /* virtual-weapon */,
+				822B68DE265215D100E2D07A /* virtual-weapon-monitor */,
 				82616F1C261EE94600C6A3F6 /* virtual-weaponTests */,
 				82616F27261EE94600C6A3F6 /* virtual-weaponUITests */,
 				82616F04261EE94400C6A3F6 /* Products */,
@@ -105,6 +137,7 @@
 				82616F03261EE94400C6A3F6 /* virtual-weapon.app */,
 				82616F19261EE94600C6A3F6 /* virtual-weaponTests.xctest */,
 				82616F24261EE94600C6A3F6 /* virtual-weaponUITests.xctest */,
+				822B68DD265215D100E2D07A /* virtual-weapon-monitor.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				82616F0A261EE94400C6A3F6 /* HomeVC.swift */,
-				82616F0F261EE94500C6A3F6 /* Assets.xcassets */,
 				826170E0262D660A00C6A3F6 /* Central */,
 				82616FC026202DF500C6A3F6 /* Utilities */,
 				82616FBF26202DE300C6A3F6 /* WeaponSimulation */,
@@ -160,6 +192,7 @@
 		826170E0262D660A00C6A3F6 /* Central */ = {
 			isa = PBXGroup;
 			children = (
+				82616F0F261EE94500C6A3F6 /* Assets.xcassets */,
 				82616F06261EE94400C6A3F6 /* AppDelegate.swift */,
 				82616F08261EE94400C6A3F6 /* SceneDelegate.swift */,
 				82616F11261EE94500C6A3F6 /* LaunchScreen.storyboard */,
@@ -171,6 +204,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		822B68DC265215D100E2D07A /* virtual-weapon-monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 822B68EA265215D200E2D07A /* Build configuration list for PBXNativeTarget "virtual-weapon-monitor" */;
+			buildPhases = (
+				822B68D9265215D100E2D07A /* Sources */,
+				822B68DA265215D100E2D07A /* Frameworks */,
+				822B68DB265215D100E2D07A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "virtual-weapon-monitor";
+			productName = "virtual-weapon-monitor";
+			productReference = 822B68DD265215D100E2D07A /* virtual-weapon-monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
 		82616F02261EE94400C6A3F6 /* virtual-weapon */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82616F2D261EE94600C6A3F6 /* Build configuration list for PBXNativeTarget "virtual-weapon" */;
@@ -230,9 +280,12 @@
 		82616EFB261EE94400C6A3F6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
+					822B68DC265215D100E2D07A = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					82616F02261EE94400C6A3F6 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -260,6 +313,7 @@
 			projectRoot = "";
 			targets = (
 				82616F02261EE94400C6A3F6 /* virtual-weapon */,
+				822B68DC265215D100E2D07A /* virtual-weapon-monitor */,
 				82616F18261EE94600C6A3F6 /* virtual-weaponTests */,
 				82616F23261EE94600C6A3F6 /* virtual-weaponUITests */,
 			);
@@ -267,6 +321,15 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		822B68DB265215D100E2D07A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822B68E4265215D200E2D07A /* Assets.xcassets in Resources */,
+				822B68E7265215D200E2D07A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82616F01261EE94400C6A3F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -295,6 +358,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		822B68D9265215D100E2D07A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822B68E2265215D100E2D07A /* ViewController.swift in Sources */,
+				822B68E0265215D100E2D07A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82616EFF261EE94400C6A3F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +414,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		822B68E5265215D200E2D07A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				822B68E6265215D200E2D07A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		82616F11261EE94500C6A3F6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -353,6 +433,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		822B68EB265215D200E2D07A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "virtual-weapon-monitor/virtual_weapon_monitor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RV56STKFC9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "virtual-weapon-monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sps17.virtual-weapon-monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		822B68EC265215D200E2D07A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "virtual-weapon-monitor/virtual_weapon_monitor.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RV56STKFC9;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "virtual-weapon-monitor/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sps17.virtual-weapon-monitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		82616F2B261EE94600C6A3F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -594,6 +720,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		822B68EA265215D200E2D07A /* Build configuration list for PBXNativeTarget "virtual-weapon-monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822B68EB265215D200E2D07A /* Debug */,
+				822B68EC265215D200E2D07A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		82616EFE261EE94400C6A3F6 /* Build configuration list for PBXProject "virtual-weapon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
